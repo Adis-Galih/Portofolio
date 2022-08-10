@@ -131,7 +131,7 @@ function createElement(){
                 fadeIn(guestName); fadeIn(btnSubmit);
                 guestName.id = 'guest-name'; btnSubmit.id = 'btn-submit';
                 guestName.placeholder = 'Input your name here...';
-                guestName.max = '20'
+                guestName.maxLength = '15'
                 guestName.type = 'text'; btnSubmit.type = 'submit';
                 btnSubmit.name = 'Submit';
                 addBeforeLoading(guestName); addBeforeLoading(btnSubmit);
