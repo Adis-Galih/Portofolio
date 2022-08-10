@@ -174,16 +174,16 @@ input:-webkit-autofill:focus {
 }
 @media (max-width:768px) {
     html{
-        font-size: 9px;
+        font-size: 8px;
     }
 }
 @media (max-width:640px){
     html{
-        font-size: 8px;
+        font-size: 7px;
     }
 }
 @media (max-width:576px){
     html{
-        font-size: 6.5px;
+        font-size: 6px;
     }
 }
