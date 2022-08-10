@@ -1,0 +1,207 @@
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+html{
+    box-sizing: border-box;
+    font-size: 10px;
+}
+main{
+    display: grid;
+    position: relative;
+    grid-template-columns: minmax(5vw, 1fr) minmax(min-content, 90vw) minmax(5vw ,1fr);
+}
+#welcome-page{
+    grid-column: 2/3 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#welcome-page h1{
+    position: absolute;
+    font-size: 6rem;
+    text-align: center;
+    /* border: 2px solid red; */
+    max-width: 90vw;
+    color: black;
+}
+#welcome-page h2{
+    position: absolute;
+    font-size: 3rem;
+    text-align: center;
+    /* border: 2px solid red; */
+    max-width: 80%;
+    color: black;
+}
+/* .border{
+    position: fixed;
+    top:50%;
+    left:50%;
+    width: 85vw;
+    max-width: 1100px;
+    transform: translate(-50%, -50%);
+} */
+.loading{
+    margin-top: 25rem;
+}
+.bar{
+    display: flex;
+    overflow: hidden;
+    width: 50rem;
+    height: 4vh;
+    border: 4px solid #303841;
+    border-radius: 10px;
+}
+.loading h3{
+    font-size: 2.5rem;
+    margin-bottom: .5rem;
+}
+.add-bar{
+    width: 10%;
+    height: 100%;
+    background-color: #303841;
+    border: 3px solid white;
+}
+.btn-choice{
+    display: flex;
+    align-items: center;
+    position: absolute;
+}
+.btn-yes, .btn-no{
+    background-color: inherit;
+    padding: 5rem;
+    font-size: 5rem;
+    font-weight: bold;
+    border: none;
+    transition: all 0.2s;
+}
+.btn-yes:hover, .btn-no:hover{
+    text-shadow: 1px 1px 1px black;
+    transform: scale(1.4);
+}
+.btn-yes:active, .btn-no:active{
+    transform: translateY(20%);
+}
+
+#guest-name{
+    position: absolute;
+    background-color: inherit;
+    border: 4px solid #303841;
+    border-radius: 10px;
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem 0;
+    text-align: center;
+    width: 40rem;
+}
+#guest-name:focus{
+    color: white;
+    background-color: #303841;
+    /* border: 4px solid #303841; */
+}
+#btn-submit{
+    position: absolute;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 11rem;
+    width: 10rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    background-color: inherit;
+    border: 4px solid #303841;
+    transition: transform 0.1s;
+}
+#btn-submit:hover{
+    color: white;
+    background-color: #303841;
+}
+#btn-submit:active{
+    transform: scale(0.8);
+}
+
+
+
+/* input:-internal-autofill-selected {
+    appearance: menulist-button;
+    background-image: none !important;
+    background-color: none !important;
+    color: fieldtext !important;
+    font-size: inherit;
+} */
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+.up{
+    margin-bottom: 11rem;
+}
+.blink{
+    animation: blink 0.5s infinite;
+}
+@keyframes blink {
+    0% {opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}
+.fa-compact-disc{
+    font-size: 5rem;
+    position: absolute;
+    margin-top: 4rem;
+    animation: rotate infinite 1s;
+}
+@keyframes rotate {
+    to{
+        transform: rotate(360deg);
+    }
+}
+.fa-face-smile-beam{
+    position: absolute;
+    margin-top: 8rem;
+    font-size: 5rem;
+}
+.gg-format-slash{
+    width: 1rem;
+    height: 12rem;
+}
+.fade-in-border{
+    opacity: 0;
+    animation: fade-in 2s forwards ease-in;
+}
+.fade-in{
+    opacity: 0;
+    animation: fade-in 1s forwards ease-in;
+}
+.fade-out{
+    opacity: 1;
+    animation: fade-out 1s forwards ease-out;
+}
+@keyframes fade-in {
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fade-out {
+    to {
+        opacity: 0;
+    }
+}
+@media (max-width:768px) {
+    html{
+        font-size: 9px;
+    }
+}
+@media (max-width:640px){
+    html{
+        font-size: 8px;
+    }
+}
+@media (max-width:576px){
+    html{
+        font-size: 6.5px;
+    }
+}
