@@ -12,7 +12,7 @@ function addDot(){
     function ruleToCreate(){
         if(createDotEl.innerText.length < 5){
             createDot();
-            console.log(createDotEl.innerText.length);
+//             console.log(createDotEl.innerText.length);
         }
         if(createDotEl.innerText.length == 5){
             createDotEl.innerText = '';
@@ -46,7 +46,7 @@ function createElement(){
     function newCreate(text, displayTime){
         const h1 = document.createElement('h1');
         fadeIn(h1);
-        console.log(arguments)
+//         console.log(arguments)
         if(arguments.length == 3){
             h1.classList.add(arguments[2]);
         }
@@ -141,7 +141,7 @@ function createElement(){
                     setTimeout(() => {
                         const nameData = guestName.value;
                         guestName.remove(); btnSubmit.remove();
-                        console.log(nameData);
+//                         console.log(nameData);
                         newCreate(`Thanks for your visit \n${nameData}`, 2000);
                     }, 1000);   
                     setTimeout(() => {
