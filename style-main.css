@@ -1166,6 +1166,7 @@ main #skills{
     border-left: none;
     transition: all 0.5s ease-in-out;
     transform: translateX(-100%);
+    z-index: 99999;
 }
 #contact-me .alert-message svg{
     font-size: 18px;
