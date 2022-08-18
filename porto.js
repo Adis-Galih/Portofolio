@@ -92,7 +92,7 @@ function createElement(){
             }, 1000);
             setTimeout(() => {
                 // fadeOut(document.querySelector('.fa-compact-disc'));
-                window.location.replace('myPorto.html');
+                window.location.replace('main.html');
             }, 8000);      
         }, time);
     }
