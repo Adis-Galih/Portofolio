@@ -133,8 +133,6 @@ function sendFormData(){
     })
 }
 
-
-
 sideBar();
 showMore();
 showExDetails();
